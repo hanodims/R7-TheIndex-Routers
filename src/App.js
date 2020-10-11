@@ -7,7 +7,7 @@ import Sidebar from "./Sidebar";
 import Loading from "./Loading";
 import AuthorList from "./AuthorList";
 import AuthorDetail from "./AuthorDetail";
-import BookTable from "./BookTable";
+import BookList from "./BookList";
 
 //---------------------------------------------
 const instance = axios.create({
@@ -62,7 +62,7 @@ const App = () => {
           <AuthorList authors={authors} />
         </Route>
         <Route path="/books/">
-          <BookTable books={books} />
+          <BookList books={books} />
         </Route>
       </Switch>
     );

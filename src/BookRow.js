@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const BookRow = (props) => {
   const book = props.book;
@@ -8,13 +7,11 @@ const BookRow = (props) => {
   ));
   return (
     <tr>
-      <Link to={`/books/${book.id}`} className="card">
-        <td>{book.title}</td>
-        <td>{authors}</td>
-        <td>
-          <button className="btn" style={{ backgroundColor: book.color }} />
-        </td>
-      </Link>
+      <td>{book.title}</td>
+      <td>{authors}</td>
+      <td>
+        <button className="btn" style={{ backgroundColor: book.color }} />
+      </td>
     </tr>
   );
 };

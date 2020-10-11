@@ -8,6 +8,7 @@ import Loading from "./Loading";
 import AuthorList from "./AuthorList";
 import AuthorDetail from "./AuthorDetail";
 import BookList from "./BookList";
+import BookColors from "./BookColors";
 
 //---------------------------------------------
 const instance = axios.create({
@@ -57,6 +58,9 @@ const App = () => {
         <Redirect exact from="/" to="/authors" />
         <Route path="/authors/:authorID">
           <AuthorDetail />
+        </Route>
+        <Route path="/books/:BookColor">
+          <BookColors books={books} />
         </Route>
         <Route path="/authors/">
           <AuthorList authors={authors} />

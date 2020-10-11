@@ -10,6 +10,7 @@ const BookList = (props) => {
   const filteredBooks = props.books.filter((book) =>
     `${book.title}`.toLowerCase().includes(query.toLowerCase())
   );
+
   const booksCards = filteredBooks.map((book) => (
     <BookCard key={book.id} book={book} />
   ));

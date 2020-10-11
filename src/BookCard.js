@@ -24,7 +24,7 @@ const BookCard = (props) => {
           <h5 className="card-title">
             <span>{authors}</span>
           </h5>
-          <Link to={`/authors/${book.color}`}>
+          <Link to={`/books/${book.color}`}>
             <button className="btn" style={{ backgroundColor: book.color }} />
           </Link>
         </div>

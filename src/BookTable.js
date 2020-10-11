@@ -2,8 +2,8 @@ import React from "react";
 
 import BookRow from "./BookRow";
 
-const BookTable = props => {
-  const bookRows = props.books.map(book => (
+const BookTable = (props) => {
+  const bookRows = props.books.map((book) => (
     <BookRow key={book.title} book={book} />
   ));
   return (
